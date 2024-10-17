@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RP Hypertrophy App Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">RP Hypertrophy App Survey Form</h1>
+    <p id="description">Help us improve your fitness journey!</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset class="main">
+        <label id="name-label" for="name">Name<input placeholder="Enter your name" id="name" name="name" type="text" required /></label>
+        <label id="email-label" for="email">Email<input placeholder="Enter your email" id="email" name="email" type="email" required /></label>
+        <label id="number-label" for="number">Age (optional)<input placeholder="Enter Age" id="number" name="number" type="number" min="13" max="120" /></label>
+        <fieldset class="sub">
+          <legend>Would you recommend the RP Hypertrophy App to a friend?</legend>
+          <label for="yes"><input class="inline" type="radio" name="refer" id="yes" value="yes" checked /> Yes</label>
+          <label for="maybe"><input class="inline" type="radio" name="refer" id="maybe" value="maybe" /> Maybe</label>
+          <label for="not-sure"><input class="inline" type="radio" name="refer" id="not-sure" value="not-sure" /> Not sure</label>
+        </fieldset>
+        <fieldset class="sub">
+         <label for="dropdown">What is your favorite feature on our app?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select an option)</option>
+            <option value="1">Real-time program adjustment</option>
+            <option value="2">Creating my own custom programs</option>
+            <option value="3">Access to detailed technique videos</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        </fieldset>
+        <fieldset class="sub">
+          <legend>Concerns? (check all that apply)</legend>
+          <label>
+            <input class="inline" type="checkbox" value="1" />Cost
+          </label>
+          <label>
+            <input class="inline" type="checkbox" value="2" />App's adjustments in workout programming
+          </label>
+          <label>
+            <input class="inline" type="checkbox" value="3" />Amount of built-in features
+          </label>
+          <label>
+            <input class="inline" type="checkbox" value="4" />Clarity in technique instructions
+          </label>
+        </fieldset>
+        <fieldset class="sub">
+          <label for="feedback">Additional comments/suggestions:
+            <textarea id="feedback" name="feedback" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+          </label>
+        </fieldset>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
